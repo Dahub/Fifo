@@ -129,14 +129,5 @@ namespace Fifo.Test
             DateTime after = DateTime.Now;
             Assert.IsTrue((after - before).TotalMilliseconds < 10);
         }
-
-        [TestMethod]
-        public void should_manage_concurrency()
-        {
-            ThrottleHelper h = new ThrottleHelper(1000, sammy, pepe);
-            int[] count = new int[5000];
-
-            para
-        }
     }
 }
